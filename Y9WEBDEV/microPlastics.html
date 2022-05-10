@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>Micro Plastics</title>
+        <style>
+            body{
+                padding: 0;
+                height: 100vh; 
+                background-color: #2D4EFF; 
+            }
+            .card {
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+            }
+
+            .top {
+                background-color: #7BA8FF;
+                color: white;
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            }
+
+            .bar-item {
+                padding: 8px 16px;
+                float: left;
+                width: auto;
+                border: none;
+                outline: none;
+                display: block
+            }
+
+            .bar .button {
+                white-space: normal
+            }
+
+            .bar {
+                display: inline-block;
+                width: 100%;
+                opacity: 70%;
+            }
+
+            .button {
+                border: none;
+                display: inline-block;
+                outline: 0;
+                padding: 20px 16px;
+                vertical-align: middle;
+                overflow: hidden;
+                text-decoration: none;
+                color: inherit;
+                text-align: center;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+            
+            .top a:hover {
+                background-image: linear-gradient(darkblue, lightblue);
+            }
+
+            .animate-top {
+                position: fixed;
+                top:0;
+                animation: animatetop 0.4s
+            }
+
+            .white {
+                color: white;
+                background-color: #7BA8FF;
+            }
+
+            @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+            }
+
+            .flex-container {
+                display: flex;
+                flex-wrap: nowrap;
+                
+                margin-top: 5%;
+            }
+
+            .flexChild1 {
+                word-wrap: break-word;
+                color: white;
+                width: 50%;
+                margin: 10px 20px 10px 15px;
+                text-align: left;
+                line-height: 20px;
+                font-size: 16px;
+            }
+
+            .flexChild2 {
+                margin: 10px 15px 10px 20px;
+                width: 50%;
+            }
+
+            .flex-container1 {
+                display: flex;
+                flex-wrap: nowrap;
+                
+                margin-top: 5%;
+            }
+
+            .flexChild1_1 {
+                word-wrap: break-word;
+                color: white;
+                width: 50%;
+                margin: 10px 20px 10px 15px;
+                text-align: left;
+                line-height: 20px;
+                font-size: 16px;
+            }
+
+            .flexChild1_2 {
+                margin: 10px 15px 10px 20px;
+                width: 50%;
+            }
+
+            .flex-container2 {
+                display: flex;
+                flex-wrap: nowrap;
+                
+                margin-top: 5%;
+            }
+
+            .flexChild2_1 {
+                word-wrap: break-word;
+                color: white;
+                width: 50%;
+                margin: 10px 20px 10px 15px;
+                text-align: left;
+                line-height: 20px;
+                font-size: 16px;
+            }
+
+            .flexChild2_2 {
+                margin: 10px 15px 10px 20px;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="top">
+            <div id="myNavbar">
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9WEBDEV/y9WebDevHome.html"><i class="fa fa-fw fa-home"></i>SDG #14 Home</a>
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9WEBDEV/plasticWaste.html"><i class="fa fa-fw fa-oil-can"></i>Plastic Waste</a>
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9WEBDEV/microPlastics.html"><i class="fa fa-fw fa-oil-can"></i>Micro Plastics</a>
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9WEBDEV/marineEcosystems.html"><i class="fa fa-fw fa-solid fa-fish"></i>Marine Ecosystems</a>
+                <a class="bar-item button" href="file:///Users/jt.borba/Desktop/Y9WEBDEV/cleanupOrganizationsPage.html"><i class="fa fa-fw fa-globe-americas"></i>Cleanup</a>
+            </div>
+        </nav>
+        <div class="flex-container">
+            <div class="flexChild1">dsbiuwrgbourqbgqruwiboguerbguerbgueobwguwerbguweorbgouweblgouewibgiqerbgiurebguerwbnguhwbreuhgburwbguerwbguewrbguerbguoebuge</div>
+            <div class="flexChild2"><img src="data:image/jpeg;base64,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" width="100%"></div>
+        </div>
+
+        <div class="flex-container1">
+            <div class="flexChild1_1">dsbiuwrgbourqbgqruwiboguerbguerbgueobwguwerbguweorbgouweblgouewibgiqerbgiurebguerwbnguhwbreuhgburwbguerwbguewrbguerbguoebuge</div>
+            <div class="flexChild1_2"><img src="https://www.openaccessgovernment.org/wp-content/uploads/2021/01/dreamstime_xxl_135285650-696x464.jpg" width="100%"></div>
+        </div>
+
+        <div class="flex-container2">
+            <div class="flexChild2_1">dsbiuwrgbourqbgqruwiboguerbguerbgueobwguwerbguweorbgouweblgouewibgiqerbgiurebguerwbnguhwbreuhgburwbguerwbguewrbguerbguoebuge</div>
+            <div class="flexChild2_2"><img src="https://i.guim.co.uk/img/media/f76c8d1385682dc0c214e49e16154048eb81d869/0_59_3069_1841/master/3069.jpg?width=620&quality=85&auto=format&fit=max&s=4064d6672c1a65a4176fd3f7f850e6dc" width="100%"></div>
+        </div>
+
+        <script>
+            window.onscroll = function() 
+            {
+                myFunction()
+            };
+            function myFunction() 
+            {
+                var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 85 || document.documentElement.scrollTop > 100) 
+            {
+                navbar.className = " bar" + " card" + " animate-top" + " white";
+            } 
+            else 
+            {
+                navbar.className = navbar.className.replace(" card animate-top white", "");
+            }
+            }
+        </script>
+    </body>
+</html>
